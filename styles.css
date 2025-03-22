@@ -1,0 +1,179 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6; /* Soft Grayish Background */
+    line-height: 1.8;
+    scroll-behavior: smooth;
+    color: #333;
+}
+
+/* Navigation */
+nav {
+    background: linear-gradient(90deg, #1e3c72, #2a5298); /* Vibrant Blue Gradient */
+    padding: 15px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: #f1f5f9;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background: #4caf50; /* Soft Green Hover */
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Navbar Scroll Effect */
+.navbar.scrolled {
+    background: #1e3c72;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* Header Section */
+h1 {
+    color: #1e3c72;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+}
+
+/* Sections */
+section {
+    margin: 100px auto;
+    padding: 60px 30px;
+    background: linear-gradient(135deg, #fdfbfb, #ebedee);
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    max-width: 900px;
+    transition: all 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Headings */
+h2 {
+    color: #2a5298;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(90deg, #4caf50, #43a047); /* Soft Green Gradient */
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    background: linear-gradient(90deg, #43a047, #388e3c);
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: linear-gradient(90deg, #2a5298, #1e3c72); /* Matching Footer Gradient */
+    color: white;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 40px 20px;
+        width: 90%;
+    }
+}
+
+/* Smooth Scroll Effect */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Floating Back to Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #4caf50, #43a047);
+    color: white;
+    padding: 12px 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+}
+
+#back-to-top:hover {
+    background: linear-gradient(135deg, #43a047, #388e3c);
+    transform: scale(1.1);
+}
+
+/* Show Back to Top Button on Scroll */
+.show {
+    display: block !important;
+}
+
+/* Highlight Sections on Scroll */
+section.active {
+    background: linear-gradient(135deg, #e3fdf5, #ffe6fa);
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+}
